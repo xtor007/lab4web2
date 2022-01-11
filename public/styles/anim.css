@@ -28,7 +28,7 @@
   width: 100%;
   margin-right: 10px;
   position: relative;
-  background: blue;
+  background-image: url(../img/back.jpg);
   box-shadow: 0 0 15px green;
 }
 
