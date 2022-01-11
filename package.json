@@ -1,0 +1,26 @@
+{
+  "name": "lab4web2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtor007/lab4web2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xtor007/lab4web2/issues"
+  },
+  "homepage": "https://github.com/xtor007/lab4web2#readme",
+  "dependencies": {
+    "fastify": "^3.25.3",
+    "fastify-formbody": "^5.2.0",
+    "fastify-multipart": "^5.2.1",
+    "fastify-static": "^4.5.0",
+    "path": "^0.12.7"
+  }
+}
