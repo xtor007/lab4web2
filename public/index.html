@@ -3,6 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/anim.css">
 		<title>Orbital speed</title>
 	</head>
 
@@ -38,12 +39,23 @@
 					<div class="centralArea">
 
 						<div class="aboutEarth">
-							
+							<button class="animationButton" id="playButton">Play</button>
 						</div>
 
 						<article class="mainText">
 
-
+							<div class="work">
+								<div class="active">
+									<button class="animationButton" id="closeButton">Close</button>
+									<button class="animationButton" id="stopButton">Stop</button>
+									<button class="animationButton" id="startButton">Start</button>
+									<button class="animationButton" id="reloadButton">Reload</button>
+								</div>
+								<div class="animationContainer" id="animationContainer">
+									<div class="ball _first" id="ball1"></div>
+									<div class="ball _second" id="ball2"></div>
+								</div>
+							</div>
 
 						</article>
 
