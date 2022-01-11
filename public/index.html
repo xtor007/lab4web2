@@ -1,6 +1,7 @@
 <html>
 
 	<head>
+		<script src="../scripts/play.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="stylesheet" href="styles/anim.css">
@@ -38,18 +39,18 @@
 
 					<div class="centralArea">
 
-						<div class="aboutEarth">
-							<button class="animationButton" id="playButton">Play</button>
+						<div class="aboutEarth" id="forMessages">
+							<button class="animationButton" onclick="play()" id="playButton">Play</button>
 						</div>
 
 						<article class="mainText">
 
-							<div class="work">
+							<div class="work _notVisible" id="work">
 								<div class="active">
 									<button class="animationButton" id="closeButton">Close</button>
-									<button class="animationButton" id="stopButton">Stop</button>
+									<button class="animationButton _notVisible" id="stopButton">Stop</button>
 									<button class="animationButton" id="startButton">Start</button>
-									<button class="animationButton" id="reloadButton">Reload</button>
+									<button class="animationButton _notVisible" id="reloadButton">Reload</button>
 								</div>
 								<div class="animationContainer" id="animationContainer">
 									<div class="ball _first" id="ball1"></div>
