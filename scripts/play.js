@@ -75,15 +75,25 @@ function reload() {
   addEvent("Button reload was clicked");
 }
 
+
+function closeAn() {
+  let block3 = document.getElementById("forMessages");
+  block3.innerHTML = ''
+  let block5 = document.getElementById("workplace");
+  block5.innerHTML = '<ol>' + localStorage.getItem('messages') + '</ol>';
+  isStop = true;
+}
+
 function addEvent(message) {
   let now = new Date();
   let newEvent = message + " " + now;
   let block3 = document.getElementById("forMessages");
   block3.innerHTML = `<p>${newEvent}</p>`
   let prev = localStorage.getItem('messages')
+  let newLi = '<li>' + newEvent + '</li>'
   if (prev === null) {
-    localStorage.setItem('messages',newEvent)
+    localStorage.setItem('messages',newLi)
   } else {
-    localStorage.setItem('messages',prev+"\n"+newEvent)
+    localStorage.setItem('messages',prev+newLi)
   }
 }
