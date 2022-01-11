@@ -64,6 +64,17 @@ function stop() {
   addEvent("Button stop was clicked");
 }
 
+function reload() {
+  ball1.style.left = "0%"
+  ball2.style.top = "0%"
+  let button = document.getElementById("reloadButton");
+  button.classList.add("_notVisible");
+  let newButton = document.getElementById("startButton");
+  newButton.classList.remove("_notVisible");
+  isStop = false;
+  addEvent("Button reload was clicked");
+}
+
 function addEvent(message) {
   let now = new Date();
   let newEvent = message + " " + now;
