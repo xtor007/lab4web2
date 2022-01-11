@@ -1,10 +1,10 @@
 <html>
 	<head>
+		<script src="../scripts/playCan.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/anim.css">
 		<title>Parabola speed</title>
-
-
 	</head>
 	<body>
 
@@ -35,15 +35,26 @@
 
 					<div class="centralArea">
 
-						<div class="aboutEarth">
-
+						<div class="aboutEarth" id="forMessages">
+							<button class="animationButton" onclick="play()" id="playButton">Play</button>
 						</div>
 
-						<article class="mainText">
+						<article class="mainText" id="workplace">
 
+							<div class="work _notVisible" id="work">
+								<div class="active">
+									<button class="animationButton" onclick="closeAn()" id="closeButton">Close</button>
+									<button class="animationButton _notVisible" onclick="stop()" id="stopButton">Stop</button>
+									<button class="animationButton" onclick="start()" id="startButton">Start</button>
+									<button class="animationButton _notVisible" onclick="reload()" id="reloadButton">Reload</button>
+								</div>
+								<canvas class="animationContainer" id="animationContainer">
 
+								</canvas>
+							</div>
 
 						</article>
+
 
 					</div>
 
