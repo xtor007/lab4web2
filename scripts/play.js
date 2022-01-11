@@ -1,3 +1,5 @@
+let isStop = false
+
 function play() {
   localStorage.removeItem("messages");
   let button = document.getElementById("playButton");
@@ -42,9 +44,24 @@ function start() {
       addEvent("Ball 2 touched the top")
     }
     if ((pos1===51) && ((pos2===50) || (pos2===48))) {
+      let button = document.getElementById("stopButton");
+      button.classList.add("_notVisible");
+      addEvent("Animation end");
+      clearInterval(id);
+    }
+    if (isStop) {
       clearInterval(id);
     }
   }
+}
+
+function stop() {
+  let button = document.getElementById("stopButton");
+  button.classList.add("_notVisible");
+  let newButton = document.getElementById("reloadButton");
+  newButton.classList.remove("_notVisible");
+  isStop = true;
+  addEvent("Button stop was clicked");
 }
 
 function addEvent(message) {
